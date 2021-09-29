@@ -1,0 +1,244 @@
+*{
+  margin: 0;
+  box-sizing: border-box;
+}
+body{
+  width: 100vw;
+}
+body,section{
+  min-width: 375px;
+}
+:root{
+  scroll-behavior: auto;
+}
+/* 新增資料 */
+#cover
+{
+	width:100%;
+	height:100%;
+	position:fixed;
+	z-index:5;
+	background:rgba(51,51,51,0.4);
+	top:0px;
+	left:0px;
+	overflow:auto;
+}
+#coverr
+{
+	width:70%;
+	min-width:300px;
+	max-width:800px;
+	height:70%;
+	min-height:300px;
+	position:absolute;
+	z-index:5;
+	background:#ffffff;
+	top:0px;
+	left:0px;
+	right:0px;
+	bottom:0px;
+	margin:auto;
+	overflow:auto;
+}
+/* 文字顏色 */
+h3,section:not(#myInformation){
+  color: #334b66;
+}
+#myInformation{
+  color: white;
+  text-shadow: 1px 1px 3px #293440;
+}
+#myInformation div.login{
+  width: 100%;
+  height: 50px;
+  text-align: end;
+  padding: 0 50px;
+  text-shadow: 0 0 0;
+}
+#myInformation div>a{
+  background-color: cadetblue;
+  border-color: cadetblue;
+  color: white;
+}
+#myInformation div>a:hover{
+  background-color: rgb(78, 127, 130);
+  border-color: rgb(78, 127, 130);
+}
+/* 導覽列顏色 */
+.bg-cadetblue{
+  background-color: #293440 !important;
+}
+.bg-img{
+  width: 100vw;
+  /* filter:saturate(0.7); */
+  background-size: cover;
+}
+@media (max-width: 768px){
+  .img{
+    height: 100%;
+  }
+}
+.setIn{
+  position: absolute;
+  top: 50%;
+  right: 50%;
+  transform: translate(-50%, -50%);
+}
+.photo{
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  margin: auto;
+  background-size:cover;
+  background-position: center;
+}
+.f-sp{
+  letter-spacing: 0.2rem;
+}
+h3.mb-5{
+  position: relative;
+  font-weight: bold;
+}
+h3.mb-5::before{
+  content: "";
+  width: 60px;
+  height: 4px;
+  background-color: cadetblue;
+  position: absolute;
+  left: 0;
+  top: 40px;
+}
+.bg-cad{
+  background-color: cadetblue !important;
+}
+.bg-cadark{
+  background-color: rgb(78, 127, 130) !important;
+}
+.text-cadark{
+  color: rgb(78, 127, 130);
+}
+a,a:hover,a:visited{
+  text-decoration: none !important;
+  color: #334b66;
+}
+.tab-content>.active {
+  display: flex !important;
+}
+.bg-wh{
+  background-color: white;
+  box-shadow: 0 1px 8px 1px rgba(30,30,50,0.1);
+  justify-content: center;
+  padding: 10px;
+  border-radius: 10px;
+  width: 250px;
+  margin: auto;
+}
+li.nav-item>a:hover{
+  color: #506c8c;
+}
+li.nav-item>a.active{
+  color: rgb(78, 127, 130);
+}
+div.time{
+  padding: 0 20px 40px;
+  border-left: solid 2px cadetblue;
+  position: relative;
+}
+div.time::before{
+  content: "";
+  width: 20px;
+  height: 20px;
+  background-color: white;
+  border-radius: 50%;
+  border: solid 3px cadetblue;
+  position: absolute;
+  top: 0;
+  left: 0;
+  transform: translate(-50%,0);
+}
+button{
+  background-color: #ddd;
+  border-radius: 5px;
+  border: none;
+  padding: 5px 10px;
+}
+.mask{
+  overflow: hidden;
+  height: 200px;
+  background-color: #293440;
+  position: relative;
+  transition: transform 0.5s, opacity 0.4s;
+}
+.img{
+  height: 200px;
+  object-fit: cover;
+  transition: transform 0.5s, opacity 0.4s;
+}
+.img_hover{
+  transform: scale(130%);
+  opacity: 0.5;
+}
+.fa-link,a.mask>h5{
+  font-size: 1.2rem;
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+}
+.fa-link{
+  top: -10%;
+  transition: all 0.5s;
+  padding: 10px;
+  background-color: cadetblue;
+  border-radius: 10%;
+}
+.card-body{
+  position: relative;
+}
+.card-body>h5::before{
+  content: "";
+  width: 10px;
+  height: 25px;
+  background-color: cadetblue;
+  position: absolute;
+  top: 15px;
+  left: 0px;
+}
+a.mask>h5{
+  bottom: -20%;
+  transition: all 0.5s;
+}
+.fa-link_hover{
+  top: 45% !important;
+}
+.h5_hover{
+  bottom: 20% !important;
+}
+p{
+  word-break: break-all;
+}
+.progress-bar{
+  transition: width 1.5s ease-in-out;
+}
+a#arr{
+  width: 40px;
+  height: 40px;
+  position: fixed;
+  right: 50px;
+  bottom: 30px;
+  z-index: 9999;
+  font-size: 1.5rem;
+  border: #334b66 solid 2px;
+  border-radius: 10%;
+  background-color: white;
+  transition: all 0.3s;
+}
+a#arr:hover{
+  background-color: #ddd;
+}
+.page{
+  width: 100%;
+  padding: 15px 0;
+  text-align: center;
+  font-size: 1.2rem;
+}
